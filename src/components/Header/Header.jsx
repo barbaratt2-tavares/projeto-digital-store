@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import Logo from "./Logo";
-import cartIcon from "../assets/mini-cart.svg";
+import Logo from "../Logo";
+import cartIcon from "../../assets/mini-cart.svg";
 
 const Header = () => {
   const [searchTerm, setSearchTerm] = useState("");
