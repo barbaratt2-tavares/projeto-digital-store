@@ -1,18 +1,12 @@
-import { BrowserRouter } from "react-router-dom";
-import Layout from "./components/Layout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Layout>
-        <main style={{ padding: "2rem", minHeight: "60vh" }}>
-          <h1>Bem-vindo à página principal!</h1>
-          <p>
-          Este conteúdo é renderizado dinamicamente dentro da prop{" "}
-          <code>children</code> do Layout.
-        </p>
-      </main>
-    </Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </BrowserRouter>
   );
 }
